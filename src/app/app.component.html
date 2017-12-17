@@ -1,20 +1,254 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- command to run ngrok is 
 
+ngrok http 8080 -host-header="localhost:8080" 
+
+-->
+<nav class="navbar navbar-primary" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Cheap Motion Capture</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#video">Videos</a></li>
+      <!-- <li><a href="#buttom">Go To buttom</a> -->
+    </ul>
+  </div>
+</nav>
+<!-- /.navbar -->
+
+<div class="container">
+
+  <div class="row row-offcanvas row-offcanvas-right">
+
+    <div class="col-xs-12 col-sm-9">
+      <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+      </p>
+
+
+      <div align = "center" id="myCarousel" class="carousel slide" data-ride="carousel" width="800px" height="350px">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" width="800px" height="350px" >
+            <div class="item active" width="800px" height="350px">
+              <img src="assets/prototype.jpg" width="800px" height="350px" alt="Los Angeles">
+            </div>
+        
+            <div class="item">
+              <img src="assets/2.jpg" width="800px" height="350px" alt="Chicago">
+            </div>
+        
+            <div class="item">
+              <img src="assets/3.png" width="800px" height="350px"  alt="New York">
+            </div>
+          </div>
+      
+        </div>
+
+
+
+
+      <br> <br> <br> <br> <br>
+
+      
+
+     
+      <div class="row">
+        <div class="col-xs-6 col-lg-4">
+          <h2>VISION</h2>
+          <p> To develop a low cost use motion capture system that tracks motion of infrared markers through multiple video feeds.
+          </p>
+          <!-- <p><a class="btn btn-default" href="#" role="button">link »</a></p> -->
+        </div>
+        <!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+          <h2>Results</h2>
+          <p>The Cheap Motion Capture System acheived most of the initially intended requirements. Even though the team encountered
+            some technical obstacles, the main functionalities such as capturing video feed, filtering and extracting point
+            data, processing the data in real time and then recreating the markers in virtual object.
+          </p>
+          <!-- <p><a class="btn btn-default" href="#" role="button">link »</a></p> -->
+        </div>
+
+        <div class="col-xs-6 col-lg-4">
+          <h2>Future</h2>
+          <ul>
+            <li> Setup Wizard </li>
+            <li> More than 4 Camera Support</li>
+            <li> Interactive GUI</li>
+            <li> 3D modeling software</li>
+            <li> Make a 3D animation</li>
+            <br>  <br>  <br>  <br>
+          </ul>
+          <!-- <p><a class="btn btn-default" href="#" role="button">link »</a></p> -->
+        </div>
+
+        <div class="col-xs-6 col-lg-4">
+          <h2>Softwares used</h2>
+
+          <ul>
+            <li> Rasberry Pi</li>
+            <li> IR Led Ring</li>
+            <li> Power Adapters</li>
+            <li> Pi Noir</li>
+            <li> Buck Converters</li>
+            <li> Routers </li>
+            <li> Cameras</li>
+            <li> Ethernet Cables</li>
+          </ul>
+
+          <!-- <p><a class="btn btn-default" href="#" role="button">link»</a></p> -->
+        </div>
+        <!--/.col-xs-6.col-lg-4-->
+        <div class="col-xs-6 col-lg-4">
+          <h2>Hardwares used</h2>
+
+          <ul>
+            <li> Rasberry Pi</li>
+            <li> IR Led Ring</li>
+            <li> Power Adapters</li>
+            <li> Pi Noir</li>
+            <li> Buck Converters</li>
+            <li> Routers </li>
+            <li> Cameras</li>
+            <li> Ethernet Cables</li>
+          </ul>
+
+          <!-- <p><a class="btn btn-default" href="#" role="button">link»</a></p> -->
+        </div>
+
+
+
+      
+
+        <!--/.col-xs-6.col-lg-4-->
+
+        <!--/.col-xs-6.col-lg-4-->
+
+        <!--/.col-xs-6.col-lg-4-->
+      
+        <!--/.col-xs-6.col-lg-4-->
+      </div>
+      <!--/row-->
+    </div>
+    <!--/.col-xs-12.col-sm-9-->
+
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+      <div class="list-group">
+
+        <!-- <a href="#" class="list-group-item active">Team Members</a> -->
+        <!-- <a href="#" class="list-group-item">ADS</a> -->
+        <a href="#video" class="list-group-item">Videos</a>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+      <div class="list-group">
+
+        <a href="#" class="list-group-item active">Team Members</a>
+        <a href="#" class="list-group-item">Gopal</a>
+        <a href="#" class="list-group-item">Jason</a>
+        <a href="#" class="list-group-item">Mario</a>
+        <a href="#" class="list-group-item">Robert</a>
+        <a href="#" class="list-group-item">Gasser</a>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+        <div class="list-group">
+  
+          <a href="#" class="list-group-item active">Functinalities</a>
+          <a href="#" class="list-group-item">1. Tracked multiple points </a>
+          <a href="#" class="list-group-item">2. plot points in a pyQt graph </a>
+          <a href="#" class="list-group-item">3. interatice GUI to sleect the range and points</a>
+         
+        </div>
+      </div>
+
+    <!--/.sidebar-offcanvas-->
+  </div>
+  <!--/row-->
+
+
+
+
+
+
+
+  <div class="container">
+    <table class="table">
+      <tr>
+        <td>
+          <div id="video">
+            <video width="400" height="240" controls>
+              <source src="assets/userManual.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+          </div>
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+
+        </td>
+        <td align="right">
+          <div id="video">
+            <video width="400" height="240" controls>
+              <source src="assets/demoVideo.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="panel-footer">
+
+
+    <footer>
+      <p align="center">© Company 2017</p>
+    </footer>
+
+  </div>
+
+  <!-- <div id = "buttom">
+
+    <p> this is a buttom </p>
+  </div> -->
+
+</div>
+<!--/.container-->
